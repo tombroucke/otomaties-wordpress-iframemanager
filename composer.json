@@ -1,6 +1,7 @@
 {
     "name": "tombroucke/otomaties-wordpress-iframemanager",
     "description" : "GDPR friendly iframe manager",
+    "license": "GNU GPLv3",
     "type": "wordpress-plugin",
     "autoload": {
         "psr-4": {
