@@ -1,7 +1,7 @@
 {
-    "name": "tombroucke/plugin-boilerplate",
-    "description" : "Boilerplate for WordPress plugins",
-    "license": "GNU GPLv3",
+    "name": "tombroucke/otomaties-wordpress-iframemanager",
+    "description" : "GDPR friendly iframe manager",
+    "type": "wordpress-plugin",
     "autoload": {
         "psr-4": {
             "Otomaties\\OtomatiesWordpressIframemanager\\": "app/"
