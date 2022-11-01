@@ -5,7 +5,7 @@ namespace Otomaties\OtomatiesWordpressIframemanager;
 /**
  * Plugin Name:       Otomaties WordPress Iframemanager
  * Description:       GDPR friendly iframe manager
- * Version:           1.0.1
+ * Version:           1.1.0
  * Author:            Tom Broucke
  * Author URI:        https://tombroucke.be/
  * License:           GPL-2.0+
