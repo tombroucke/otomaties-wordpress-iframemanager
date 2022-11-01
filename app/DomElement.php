@@ -1,5 +1,5 @@
 <?php
-namespace Otomaties\OtomatiesWordpressIframemanager\Models;
+namespace Otomaties\OtomatiesWordpressIframemanager;
 
 class DomElement
 {
@@ -13,9 +13,9 @@ class DomElement
      * Initialize domelement
      *
      * @param string $html
-     * @param array<string, mixed> $block
+     * @param array<string>
      */
-    public function __construct(private string $html, private array $block)
+    public function __construct(private string $html)
     {
         $this->titleCallback = function ($iframe, $domElement) {
             $title = $iframe->getAttribute('title') ?: __('External content', 'iframemanager');

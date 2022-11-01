@@ -2,8 +2,6 @@
 
 namespace Otomaties\OtomatiesWordpressIframemanager;
 
-use Otomaties\OtomatiesWordpressIframemanager\Models\DomElement;
-
 /**
  * The public-facing functionality of the plugin.
  *
@@ -98,7 +96,7 @@ class Frontend
             $provider = $block['attrs']['providerNameSlug'];
     
             if (in_array($provider, ['youtube', 'vimeo'], true)) {
-                $block = new DomElement($blockContent, $block);
+                $block = new DomElement($blockContent);
                 $block->setService($provider);
                 $block->setId(function ($iframe, $domElement) {
                     return $this->parseServiceId($domElement->getService(), $iframe->getAttribute('src'));
@@ -106,7 +104,7 @@ class Frontend
                 $blockContent = $block->replaceIframes();
             }
         } elseif ('core/html' == $blockName) {
-            $block = new DomElement($blockContent, $block);
+            $block = new DomElement($blockContent);
     
             if (strpos($blockContent, 'google.com/maps/embed') !== false && strpos($blockContent, 'pb=') !== false) {
                 $block->setService('googleMaps');

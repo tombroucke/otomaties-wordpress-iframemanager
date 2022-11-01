@@ -8,6 +8,7 @@
   },
   "repository": "git@github.com:tombroucke/plugin-boilerplate.git",
   "author": "Tom Broucke <tom@tombroucke.be>",
+  "license": "MIT",
   "dependencies": {
     "css-minimizer-webpack-plugin": "^4.2.2"
   },
