@@ -13,7 +13,6 @@ class DomElement
      * Initialize domelement
      *
      * @param string $html
-     * @param array<string>
      */
     public function __construct(private string $html)
     {
@@ -80,16 +79,6 @@ class DomElement
     public function setAutoscale(bool $autoscale) : void
     {
         $this->autoscale = $autoscale;
-    }
-
-    /**
-     * Get wordpress block
-     *
-     * @return array<string, mixed>
-     */
-    public function getBlock() : array
-    {
-        return $this->block;
     }
 
     /**

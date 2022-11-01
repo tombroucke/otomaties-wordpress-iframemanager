@@ -6,7 +6,7 @@ final class DomElementTest extends TestCase
 {
     public function testServiceCanBeSet(): void
     {
-        $domElement = new Otomaties\OtomatiesWordpressIframemanager\Models\DomElement('', []);
+        $domElement = new Otomaties\OtomatiesWordpressIframemanager\DomElement('', []);
         $domElement->setService('youtube');
         $this->assertEquals('youtube', $domElement->getService());
     }
